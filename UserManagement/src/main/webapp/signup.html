@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <style>
+        .form-container{
+            width: 500px;
+            height: 600px;
+            margin: auto;
+        }
+        .form-container #main-field{
+            height: 500px;
+            width: 600px;
+        }
+        #name-field{
+            display: flex;
+            justify-content: space-around;
+        }
+        .name-holder{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .name-holder input{
+            padding: 5px;
+        }
+        .credentials{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            /* border: 2px solid black; */
+        }
+        .credentials .cred-holder{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .credentials .cred-holder input{
+            width: 100%;
+            padding: 5px;
+        }
+        .button-holder{
+            margin-top: 10px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .button-holder button{
+            padding: 5px;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+<section class="form-container" >
+    <form action="register" method="POST">
+        <fieldset id="main-field">
+            <legend><h2>Student Registration</h2></legend>
+
+            <div class="name-container">
+                <fieldset id="name-field">
+                    <legend>Name</legend>
+                    <div class="name-holder">
+                        <label for="fist-name">First Name</label>
+                        <input type="text" name="fname" id="fist-name" required>
+                    </div>
+
+                    <div class="name-holder">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="lname" id="last-name" required>
+                    </div>
+                </fieldset>
+            </div>
+
+
+            <div class="credentials">
+                <div class="cred-holder">
+                    <!-- <label for="username">UserName</label> -->
+                    <input type="text" name="username" id="username" placeholder="Enter UserName" required>
+                </div>
+                <div class="cred-holder">
+                    <input type="email" name="email" id="email" placeholder="Enter Email" required>
+                </div>
+                <div class="cred-holder"><input type="password" name="password" id="pass" placeholder="Enter Password" required></div>
+            </div>
+
+
+            <div class="button-holder">
+                <button type="submit">Register</button>
+
+            </div>
+            <div class="button-holder">
+                <button type="reset">Clear Form</button>
+            </div>
+        </fieldset>
+    </form>
+</section>
+</body>
+</html>
