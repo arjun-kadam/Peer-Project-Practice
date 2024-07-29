@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register New Account</title>
+</head>
+<body>
+	<div class="conatiner">
+		<form action="registerService" method="post">
+			Name: <input type="text" name="name" placeholder="Enter Your Name">
+			Email: <input type="email" name="email" placeholder="Enter Email">
+			<label for="cars">Choose a Language:</label> 
+			<select name="lang" id="langs">
+				<option value="java">Java</option>
+				<option value="cpp">C++</option>
+				<option value="c">C</option>
+				<option value="python">Python</option>
+			</select> 
+			Select Gender: 
+			Male:<input type ="radio" name ="sex" value="Male">
+            Female:<input type = "radio" name="sex" value="Female">
+			Password: <input type="password" name="pass" placeholder="Enter New Password">
+			<button type="submit">Register</button>
+			<button type="reset">Reset</button>
+		</form>
+	</div>
+</body>
+</html>
